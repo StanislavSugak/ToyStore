@@ -1,6 +1,20 @@
 .header-upper{
     height: 30px;
-    background-color: #A5C926
+    background-color: #A5C926;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-upper-contact{
+    height: 100%;
+    width: 300px;
+    padding-left: 50px;
+}
+
+.header-upper-social{
+    height: 100%;
+    width: 130px;
+    padding-right: 50px;
 }
 
 .header-lower{
