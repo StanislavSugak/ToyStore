@@ -3,25 +3,73 @@
     background-color: #A5C926;
     display: flex;
     justify-content: space-between;
+    padding: 0 50px;
 }
 
 .header-upper-contact{
     height: 100%;
-    width: 300px;
-    padding-left: 50px;
     display: flex;
     align-items: center;
     color: white;
+}
+
+.header-upper-contact-content{
+    display: flex;
+    align-items: center;
 }
 
 .header-upper-contact-text{
     padding-left: 15px;
 }
 
+.header-upper-about{
+    height: 100%;
+    width: 70px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-upper-about-burger{
+    height: 15px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line-menu1{
+    height: 3px;
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    width: 20px;
+}
+
+.line-menu2{
+    height: 3px;
+    border-radius: 14px;
+    background-color: #FFFFFF;
+    width: 16px;
+}
+
+.line-menu3{
+    height: 3px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    width: 12px;
+}
+
 .header-upper-social{
     height: 100%;
     width: 130px;
-    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-upper-social img{
+    height: 14px;
+    width: 14px;
 }
 
 .header-lower{
@@ -40,4 +88,22 @@
     height: 100%;
     width: 130px;
     padding-right: 50px;
+}
+
+@media (max-width: 698px){
+    .header-upper{
+        padding: 0 20px;
+    }
+
+    .header-upper-contact-content{
+        display: none;
+    }
+
+    .header-upper-about{
+        display: flex;
+    }
+
+    .header-lower-text{
+        padding-left: 20px;
+    }
 }
