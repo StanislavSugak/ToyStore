@@ -3,6 +3,11 @@ body{
     border-color: #F8F8F8;
 }
 
+nav{
+    height: 70px;
+    width: calc(100% - 330px);
+}
+
 header{
     height: 100px;
 }

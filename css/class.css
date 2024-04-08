@@ -6,12 +6,17 @@
 .header-lower{
     height: 70px;
     background-color: #FFFFFF;
+    display: flex;
 }
 
 .header-lower-text{
-
+    height: 100%;
+    width: 100px;
+    padding-left: 50px;
 }
 
 .header-lower-cart{
-    
+    height: 100%;
+    width: 130px;
+    padding-right: 50px;
 }
