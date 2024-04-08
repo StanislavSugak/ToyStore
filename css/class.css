@@ -9,6 +9,13 @@
     height: 100%;
     width: 300px;
     padding-left: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header-upper-contact-text{
+    padding-left: 15px;
 }
 
 .header-upper-social{
