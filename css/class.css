@@ -319,16 +319,6 @@
     .shop-content{
         padding: 0px;
     }
-
-    .shop-content-card-absolute-conteiner-left{
-        float: none;
-        align-items: center;
-    }
-
-    .shop-content-card-absolute-conteiner-right{
-        float: none;
-        align-items: center;
-    }
 }
 
 @media(max-width: 508px){
@@ -347,7 +337,14 @@
         height: 340px;
     }
 
+    .shop-content-card-absolute-conteiner-left{
+        float: none;
+        align-items: center;
+    }
+
     .shop-content-card-absolute-conteiner-right{
+        float: none;
+        align-items: center;
         order: 2;
     }
 }
