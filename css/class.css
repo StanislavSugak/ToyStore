@@ -493,6 +493,7 @@
 
     .various-lower-select:nth-of-type(2) .various-lower-card{
         display: none;
+        padding: 0;
     }
 }
 /*section - various*/
