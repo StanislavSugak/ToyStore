@@ -27,12 +27,22 @@
     font-weight: 100;
 }
 
+.OpenSans13-9 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0;
+    font-weight: 100;
+    text-align: center;
+}
+
 .OpenSans14-9 {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
     margin: 0;
     font-weight: 100;
+    text-align: center;
 }
 
 .VarelaRound14 {
@@ -70,6 +80,13 @@
     margin: 0;
 }
 
+.VarelaRound36-20{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 0px;
+}
+
 .VarelaRound39-20{
     font-family: 'Varela Round', sans-serif;
     font-size: 39px;
@@ -81,6 +98,11 @@
 }
 
 @media (max-width: 698px){
+    .OpenSans13-9{
+        font-size: 9px;
+        line-height: 16px;
+    }
+    
     .OpenSans14-9{
         font-size: 9px;
         line-height: 16px;
@@ -93,6 +115,12 @@
     }
 
     .VarelaRound28-20{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+
+    .VarelaRound36-20{
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 0px;
