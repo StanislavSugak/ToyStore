@@ -1,3 +1,10 @@
+.OpenSans9 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9px;
+    line-height: 16px;
+    margin: 0;
+}
+
 .OpenSans11 {
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
@@ -13,6 +20,21 @@
     font-weight: 100;
 }
 
+.OpenSans14-9 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    font-weight: 100;
+}
+
+.VarelaRound20 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+}
+
 .VarelaRound21 {
     font-family: 'Varela Round', sans-serif;
     font-size: 21px;
@@ -20,7 +42,7 @@
     margin: 0;
 }
 
-.VarelaRound39{
+.VarelaRound39-20{
     font-family: 'Varela Round', sans-serif;
     font-size: 39px;
     line-height: 48px;
@@ -28,4 +50,17 @@
     margin-bottom: 7px;
     text-align: center;
     color:black
+}
+
+@media (max-width: 698px){
+    .OpenSans14-9{
+        font-size: 9px;
+        line-height: 16px;
+    }
+
+    .VarelaRound39-20{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
 }
