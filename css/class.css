@@ -493,5 +493,9 @@
         min-width: 0px;
         flex-wrap: wrap;
     }
+
+    .various-lower-select:nth-of-type(2) .various-lower-card{
+        display: none;
+    }
 }
 /*section - various*/
