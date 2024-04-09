@@ -1,3 +1,4 @@
+/*header*/
 .header-upper{
     height: 30px;
     background-color: #A5C926;
@@ -124,6 +125,10 @@
         padding: 0 20px;
     }
 
+    .header-lower{
+        padding: 0 20px;
+    }
+    
     .header-upper-contact-content{
         display: none;
     }
@@ -132,11 +137,61 @@
         display: flex;
     }
 
-    .header-lower{
-        padding: 0 20px;
-    }
-
     .navigation{
         display: none;
+    }
+}
+/* HEADER */
+
+
+/*main*/
+.greeting-one{
+    height: 640px;
+    width: 100%;  
+    display: flex;
+    background: url(../image/greeting_first.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting-card{
+    height: 310px;
+    width: 570px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greeting-card-content{
+    height: 420px;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color:#A5C926;
+}
+
+.greeting-card-button{
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #A5C926;
+    color:#FFFFFF
+}
+
+@media (max-width: 698px){
+    .greeting-one{
+        height: 350px;
+    }
+
+    .greeting-card{
+        height: 200px;
+        width: 300px;
     }
 }
