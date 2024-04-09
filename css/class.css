@@ -222,13 +222,40 @@
     height: fit-content;
     padding: 0 40px;
     display: flex;
+    align-items: center; 
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .shop-content-card{
+    position: relative;
     height: 320px;
     width: calc((100% - 20px)/2);
+    min-width: 570px;
+    background-color: red;
+    display: flex;
+    align-items: flex-end;
 }
 
+.shop-content-card-absolute{
+    position: absolute;
+    height: 270px;
+    width: 100%;
+    padding-bottom:50px;
+}
+
+.shop-content-card-rectangle{
+    height: 185px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #FFC12C;
+    margin: 30px 10px;
+}
+
+@media(max-width:1240px){
+    .shop-content-card{
+        width: 100%;
+        min-width: 0px;
+    }
+}
 /*section - shop*/
