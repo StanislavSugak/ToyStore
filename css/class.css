@@ -145,6 +145,8 @@
 
 
 /*main*/
+
+/*section - gretting#1*/
 .greeting-one{
     height: 640px;
     width: 100%;  
@@ -202,9 +204,31 @@
         height: 130px;
         width: 220px;
     }
-    
+
     .greeting-card-button{
         height: 30px;
         width: 100px;
     }
 }
+/*section - gretting#1*/
+
+/*section - shop*/
+.shop{
+    height: fit-content;
+    width: 100%;
+}
+
+.shop-content{
+    height: fit-content;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shop-content-card{
+    height: 320px;
+    width: calc((100% - 20px)/2);
+}
+
+/*section - shop*/
