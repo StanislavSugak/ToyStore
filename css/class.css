@@ -322,7 +322,6 @@
 }
 
 @media(max-width: 508px){
-
     .shop-content-card-absolute{
         gap: 0px;
     }
@@ -703,10 +702,13 @@
 .sign-up{
     height: fit-content;
     width: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
     padding: 20px 50px;
 }
 
 .sign-up-container{
+    height: fit-content;
     width: 100%;
     border-radius: 20px;
     background-color: #FFFFFF;
@@ -718,8 +720,9 @@
 
 .sign-up-content{
     height: 90px;
-    width: 100%;
-    max-width: 570px;
+    width: 50%;
+    min-width: 570px;
+    max-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -782,5 +785,45 @@
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+@media(max-width: 1239px){
+    .sign-up-content{
+        width: 100%;
+        min-width: 0px;
+    }
+}
+
+@media (max-width: 698px){
+    .sign-up-content{
+        gap: 10px;
+    }
+
+    .sign-up-content-rectangle{
+        width: 200px;
+    }
+
+    .sign-up-content-text{
+        width: 220px;
+        grid-template-rows: repeat(8, minmax(0, 1fr));
+        grid-template-columns: repeat(22, minmax(0, 1fr));
+    }
+
+    .sign-up-content-text p:nth-child(2) {
+        grid-row: 5;
+        grid-column: 1 / 6;
+    }
+      
+    .sign-up-content-text p:nth-child(3) {
+        grid-row: 5;
+        grid-column: 6 / 22;
+    }
+}
+
+@media(max-width: 508px){
+    .sign-up{
+        width: calc(100% - 10px);
+        padding: 20px 5px;
+    }
 }
 /*sign up*/
