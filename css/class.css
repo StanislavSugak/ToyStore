@@ -584,7 +584,9 @@
 .free-container{
     height: 630px;
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .free-container-upper{
@@ -608,6 +610,7 @@
 .free-container-lower{
     height: 430px;
     width: 100%;
+    max-width: 2000px;
     display: flex;
     gap: 30px;
 }
