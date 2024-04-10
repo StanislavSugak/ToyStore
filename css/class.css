@@ -574,3 +574,40 @@
     }
 }
 /*greeting-two*/
+
+/*free*/
+.free{
+    height: 730px;
+    width: calc(100% - 100px);
+    margin: 50px;
+}
+
+.free-container{
+    height: 630px;
+    width: 100%;
+
+}
+
+.free-container-upper{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    color:#A5C926;
+}
+
+.free-container-upper-text{
+    color: black;
+    max-width: 450px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.free-container-lower{
+    height: 430px;
+    width: 100%;
+}
+/*free*/
