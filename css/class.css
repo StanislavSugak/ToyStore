@@ -577,7 +577,7 @@
 
 /*free*/
 .free{
-    height: 730px;
+    height: 630px;
     width: calc(100% - 100px);
     margin: 50px;
 }
@@ -650,7 +650,21 @@
     margin-left: 20px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1279px){
+    .free-container-lower-contant{
+        margin-left: 15px;
+    }
+
+    .free-lower-grid-main-text{ 
+        grid-row: 21;
+    }
+}
+
+@media (max-width: 767px){
+    .free{
+        height: 520px;
+    }
+
     .free-container-lower-contant{
         width: 100%;
         margin: 0 10px;
@@ -684,3 +698,89 @@
     }
 }
 /*free*/
+
+/*sign up*/
+.sign-up{
+    height: fit-content;
+    width: calc(100% - 100px);
+    padding: 20px 50px;
+}
+
+.sign-up-container{
+    width: 100%;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sign-up-content{
+    height: 90px;
+    width: 100%;
+    max-width: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sign-up-content-teleg{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    background-color: #A5C926;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up-content-teleg-image{
+    height: 20px;
+    width: 20px;
+}
+
+.sign-up-content-text{
+    height: 60px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    grid-template-columns: repeat(30, minmax(0, 1fr));
+    overflow: hidden; 
+}
+
+.sign-up-content-text p:first-child {
+    grid-row: 1;
+    grid-column: 1 / 31;
+}
+  
+.sign-up-content-text p:nth-child(2) {
+    grid-row:2;
+    grid-column: 1 / 9;
+}
+  
+.sign-up-content-text p:nth-child(3) {
+    grid-row:2;
+    grid-column: 9 / 31;
+    color:#A5C926;
+}
+
+.sign-up-content-rectangle{
+    height: 46px;
+    width: 280px;
+    border-radius: 20px;
+    background-color: #F8F8F8;
+    border: 2px solid #E5E5E5;
+}
+
+.sign-up-content-rectangle:last-child{
+    width: 90px;
+    background-color: #A5C926;
+    border: 0px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+/*sign up*/
