@@ -16,21 +16,16 @@
 
 @keyframes rotate-animation {
     0% {
-      transform: rotate(0deg) scale(1);
+      transform: rotate(0deg)
     }
     50%{
-        transform: rotate(360deg) scale(0.8);
-
+        transform: rotate(360deg) scale(0.7);
     }
     100% {
-      transform: rotate(-0deg) scale(1);
+      transform: rotate(-0deg)
     }
   }
 
-.header-lower-cart img{
-    transition: all 0.8s ease-in-out;
-}
-
 .header-lower-cart img:hover{
-    animation: rotate-animation 2s;
+    animation: rotate-animation 2s alternate;
 }
