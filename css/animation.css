@@ -16,16 +16,65 @@
 
 @keyframes rotate-animation {
     0% {
-      transform: rotate(0deg)
+      transform: rotate(0deg);
     }
     50%{
         transform: rotate(360deg) scale(0.7);
     }
     100% {
-      transform: rotate(-0deg)
+      transform: rotate(-0deg);
     }
   }
 
 .header-lower-cart img:hover{
     animation: rotate-animation 2s alternate;
 }
+
+@keyframes y-ping-pon{
+    0%{
+        transform: translateY(0);
+    }
+    15%{
+        transform: translateY(-10px) scale(0.8);
+    }
+    30%{
+        transform: translateY(0);
+    }
+    66%{
+        transform: translateY(-6px) scale(0.9);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.header-lower-cart-count p:hover{
+    animation: y-ping-pon 1.5s;
+}
+
+.header-lower-cart p:first-of-type {
+    position: relative;
+  }
+  
+  .header-lower-cart p:first-of-type:hover {
+    color: red;
+  }
+  
+  .header-lower-cart p:first-of-type:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.25s;
+  }
+  
+  .header-lower-cart p:first-of-type::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s;
+  }
