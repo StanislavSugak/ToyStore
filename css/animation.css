@@ -44,29 +44,153 @@
     animation: y-ping-pon 1.5s;
 }
 
-.header-lower-cart p:first-of-type {
+.header-lower-cart > p {
     position: relative;
-  }
+}
   
-  .header-lower-cart p:first-of-type:hover {
+  .header-lower-cart > p:hover {
     color: red;
-  }
+}
   
-  .header-lower-cart p:first-of-type:hover::after {
+.header-lower-cart > p:hover::after {
     transform: scaleX(1);
     transform-origin: left;
     transition: transform 0.25s;
-  }
+}
   
-  .header-lower-cart p:first-of-type::after {
+.header-lower-cart > p::after {
     content: '';
     width: 100%;
     height: 1px;
-    background-color: black;
+    background-color: red;
     position: absolute;
     left: 0;
     bottom: -2px;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.25s;
-  }
+}
+
+.greeting-card-button{
+    position: relative;
+    transition: all 0.5s;
+}
+
+.greeting-card-button:hover{
+    background-color: rgb(131, 163, 16);
+}
+
+.greeting-card-button p{
+    transition: all 0.5s;
+}
+
+.greeting-card-button:hover p{
+    font-size: 15px; 
+}
+
+.free-container-lower{
+    overflow: hidden; 
+}
+
+.free-container-lower img{
+    animation: mscaley 1s infinite alternate;
+}
+
+@keyframes mscaley{
+    0%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaleY(1.6);
+    }
+}
+
+.pictures-container-images-card img{
+    transition: 1s;
+}
+
+.pictures-container-images-card img:nth-child(1):hover{
+    transform: rotate(180deg);
+}
+
+.shop-content-card-image:first-child{
+    animation: scalemax 1.5s infinite alternate;
+}
+
+.shop-content-card-image:last-child{
+    animation: scalemin 1.5s infinite alternate;
+}
+
+@keyframes scalemax{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+@keyframes scalemin{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0.7);
+    }
+}
+
+.various-lower-card-content-image{
+    animation: mrotate 2s infinite;
+}
+
+@keyframes mrotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.greeting-two-card-button{
+    animation: mskew 2s infinite alternate;
+}
+
+@keyframes mskew{
+    0%{
+        transform: skew(0deg, 0deg);
+    }
+    100%{
+        transform: skew(10deg, 10deg);
+    }
+}
+
+.pictures-container-images-card img:nth-child(2):hover{
+    transform:  translateY(10px);
+}
+
+.various-container-upper-more{
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-100px);
+    }
+}
+
+.pictures-container-button:hover{
+    animation: my-opacity 1s linear infinite alternate;
+}
+
+@keyframes my-opacity{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
