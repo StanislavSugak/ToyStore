@@ -14,20 +14,12 @@
     color: red;
 }
 
-@keyframes rotate-animation {
-    0% {
-      transform: rotate(0deg);
-    }
-    50%{
-        transform: rotate(360deg) scale(0.7);
-    }
-    100% {
-      transform: rotate(-0deg);
-    }
-  }
-
-.header-lower-cart img:hover{
-    animation: rotate-animation 2s alternate;
+.header-lower-cart img {
+    transition: transform 1s;
+}
+  
+.header-lower-cart img:hover {
+    transform: rotate(360deg);
 }
 
 @keyframes y-ping-pon{
